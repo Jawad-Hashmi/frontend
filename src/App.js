@@ -1,6 +1,5 @@
-import Loginform from "./login/components/logincomp";
-import appRoutes from "./Routes/appRoutes";
+import AppRoutes from "./Routes/appRoutes";
 function App() {
-  return <Loginform />;
+  return <AppRoutes/>;
 }
 export default App;

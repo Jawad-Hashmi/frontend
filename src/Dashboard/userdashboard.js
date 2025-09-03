@@ -26,7 +26,7 @@ export default function UserDashboard() {
 
     try {
       await axios.post(
-        `http://localhost:3000/api/${role}/logout`,
+        `https://backend-2t4p.onrender.com/api/${role}/logout`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );

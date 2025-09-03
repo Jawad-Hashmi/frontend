@@ -30,7 +30,7 @@ function SignUp() {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:3000/api/user/send-otp", {
+      await axios.post("https://backend-2t4p.onrender.com/api/user/send-otp", {
         name,
         email,
         password,
@@ -52,7 +52,7 @@ function SignUp() {
     setSuccess("");
 
     try {
-      await axios.post("http://localhost:3000/api/user/verify-otp", {
+      await axios.post("https://backend-2t4p.onrender.com/api/user/verify-otp", {
         email,
         otp,
       });
@@ -72,7 +72,7 @@ function SignUp() {
     setSuccess("");
 
     try {
-      await axios.post("http://localhost:3000/api/user/resend-otp", {
+      await axios.post("https://backend-2t4p.onrender.com/api/user/resend-otp", {
         email,
       });
       setSuccess("OTP resent successfully. Check your email again.");

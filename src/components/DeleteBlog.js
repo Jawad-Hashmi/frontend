@@ -10,7 +10,7 @@ function DeleteBlog() {
   const handleDelete = async () => {
     try {
       await axios.delete(
-        `http://localhost:3000/api/${role}/blogs/${blogId}`,
+        `https://backend-2t4p.onrender.com/api/${role}/blogs/${blogId}`,
         { headers: { Authorization: `Bearer ${token}` } }
       );
       alert("Blog deleted successfully!");

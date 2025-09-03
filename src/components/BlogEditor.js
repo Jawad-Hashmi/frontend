@@ -157,7 +157,7 @@ export default function BlogForm() {
       console.log("Sending token:", adminInfo.token);
 
       await axios.post(
-        "http://localhost:3000/api/admin/blogs",
+        "https://backend-2t4p.onrender.com/api/admin/blogs",
         formDataToSend,
         {
           headers: {

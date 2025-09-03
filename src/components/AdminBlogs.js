@@ -8,7 +8,7 @@ export default function Blogs() {
   const [blogs, setBlogs] = useState([]);
   const [selectedBlog, setSelectedBlog] = useState(null);
   const [updateMode, setUpdateMode] = useState(false);
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://backend-2t4p.onrender.com";
 
   const token = localStorage.getItem("authToken");
   let adminId = null;

@@ -12,7 +12,7 @@ export default function BlogList() {
   const [filters, setFilters] = useState({ author: "", dateFrom: "", dateTo: "", search: "" });
   const [comment, setComment] = useState("");
 
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://backend-2t4p.onrender.com";
 
   // ------------------ Fetch all blogs ------------------
   const fetchBlogs = async () => {

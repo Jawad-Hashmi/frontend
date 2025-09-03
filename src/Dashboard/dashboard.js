@@ -45,7 +45,7 @@ function DashboardLayout() {
   const handleLogout = async () => {
     try {
       await axios.post(
-        `http://localhost:3000/api/${normalizeRole}/logout`,
+        `https://backend-2t4p.onrender.com/api/${normalizeRole}/logout`,
         {},
         { headers: { Authorization: `Bearer ${token}` } }
       );
@@ -62,7 +62,7 @@ function DashboardLayout() {
   const handleBlogUpload = async (content) => {
     try {
       await axios.post(
-        `http://localhost:3000/api/${normalizeRole}/blogs`,
+        `https://backend-2t4p.onrender.com/api/${normalizeRole}/blogs`,
         { content },
         { headers: { Authorization: `Bearer ${token}` } }
       );

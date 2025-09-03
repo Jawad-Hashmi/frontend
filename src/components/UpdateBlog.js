@@ -69,7 +69,7 @@ function UpdateBlog({ blogData, onClose, onUpdate }) {
       formDataToSend.append("author_email", author.email);
 
       await axios.patch(
-        `http://localhost:3000/api/admin/blogs/${blogData._id}`,
+        `https://backend-2t4p.onrender.com/api/admin/blogs/${blogData._id}`,
         formDataToSend,
         {
           headers: {

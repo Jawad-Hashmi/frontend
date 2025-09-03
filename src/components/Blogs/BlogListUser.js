@@ -15,7 +15,7 @@ export default function BlogListUser() {
     search: "",
   });
 
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://backend-2t4p.onrender.com";
 
   // ---------------- Fetch all blogs ----------------
   const fetchBlogs = async () => {

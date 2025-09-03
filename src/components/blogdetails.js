@@ -11,7 +11,7 @@ export default function BlogDetails({ asModal = false, blogData = null, onClose 
   const [commentText, setCommentText] = useState("");
   const [replyText, setReplyText] = useState({});
   const [successMessage, setSuccessMessage] = useState("");
-  const backendURL = "http://localhost:3000";
+  const backendURL = "https://backend-2t4p.onrender.com";
 
   const token = localStorage.getItem("authToken");
   const role = localStorage.getItem("userRole")?.toLowerCase(); // "user" or "admin"

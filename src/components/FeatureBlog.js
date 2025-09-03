@@ -21,7 +21,7 @@ function FeatureBlog() {
 
     try {
       const response = await axios.patch(
-        `http://localhost:3000/api/${role}/blogs/${blogId}/feature`,
+        `https://backend-2t4p.onrender.com/api/${role}/blogs/${blogId}/feature`,
         { isFeatured }, // ✅ clear field name
         {
           headers: {

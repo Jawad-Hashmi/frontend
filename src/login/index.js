@@ -1,4 +1,4 @@
-import Loginform from "./components/logincomp";
+import Loginform from "../components/Login/logincomp";
 function Login() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">

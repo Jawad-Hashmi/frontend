@@ -10,7 +10,7 @@ function Loginform() {
   const [loginError, setLoginError] = useState("");
 
   const navigate = useNavigate();
-  
+
   // Clear any existing authentication when reaching login page
   useEffect(() => {
     localStorage.removeItem("authToken");
@@ -40,7 +40,7 @@ function Loginform() {
     // Try User login
     try {
       const userResponse = await axios.post(
-        "http://localhost:3000/api/user/login",
+        "https://backend-2t4p.onrender.com/api/user/login",
         { email, password }
       );
 
@@ -85,7 +85,7 @@ function Loginform() {
 
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
         <form
           onSubmit={handlesubmit}

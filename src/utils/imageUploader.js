@@ -1,8 +1,9 @@
 import axios from "axios";
+
 export const uploadImage = async (file) => {
   const formData = new FormData();
-  formData.append('image', file);
-  
+  formData.append('coverImage', file); // must match backend field name
+
   try {
     const response = await axios.post('/api/upload', formData, {
       headers: {
@@ -10,9 +11,9 @@ export const uploadImage = async (file) => {
         'Authorization': `Bearer ${localStorage.getItem('authToken')}`
       }
     });
-    return response.data.imageUrl;
+    return response.data.imageUrl; // Cloudinary URL
   } catch (error) {
-    console.error('Image upload failed:', error);
+    console.error('Image upload failed:', error.response?.data || error.message);
     throw error;
   }
 };
